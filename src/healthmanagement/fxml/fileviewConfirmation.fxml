@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="115.0" prefWidth="383.0" styleClass="mainFxmlClass" stylesheets="@../css/fileviewconfirmation.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="healthmanagement.controllers.FileviewConfirmationController">
+   <children>
+      <DatePicker fx:id="datePicker" editable="false" layoutX="235.0" layoutY="35.0" onMouseClicked="#datePickerField_MouseClicked" onMouseExited="#datePickerField_MouseExited" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="192.0" layoutY="34.0" prefHeight="27.0" prefWidth="44.0" text="Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeField" editable="false" layoutX="51.0" layoutY="35.0" onMouseClicked="#timeField_MouseClicked" onMouseExited="#timeField_MouseExited" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutY="34.0" prefHeight="27.0" prefWidth="51.0" text="Time:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButton" layoutX="322.0" layoutY="81.0" mnemonicParsing="false" onAction="#okButton_Init" onMouseEntered="#okButton_MouseEntered" onMouseExited="#okButton_MouseExited" opacity="0.7" prefHeight="30.0" prefWidth="30.0" styleClass="ok-button" />
+      <Button fx:id="cancelButton" layoutX="355.0" layoutY="83.0" mnemonicParsing="false" onAction="#cancelButton_Init" onMouseEntered="#cancelButton_MouseEntered" onMouseExited="#cancelButton_MouseExited" opacity="0.7" prefHeight="25.0" prefWidth="25.0" styleClass="cancel-button">
+         <font>
+            <Font />
+         </font>
+      </Button>
+      <Text layoutX="123.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Click Fields to Edit" />
+      <Label fx:id="fieldCheck" layoutX="14.0" layoutY="88.0" opacity="0.0" text="Ps Fill both spaces with the appropriate values" textFill="#f80303" />
+   </children>
+</AnchorPane>

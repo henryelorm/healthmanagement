@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="650.0" styleClass="mainFxmlClass" stylesheets="@../css/newstaffview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.NewStaffScreen2Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="38.0" prefHeight="20.0" prefWidth="103.0" text="Access Priority" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="adminBox" layoutX="84.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="Admin" />
+      <CheckBox fx:id="labsBox" layoutX="84.0" layoutY="113.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="Labs" />
+      <CheckBox fx:id="frontdeskBox" layoutX="84.0" layoutY="148.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="80.0" text="FrontDesk" />
+      <CheckBox fx:id="pharmacyBox" layoutX="84.0" layoutY="183.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="91.0" text="Pharmacy" />
+      <Button fx:id="cancelButton" layoutX="601.0" layoutY="392.0" mnemonicParsing="false" onAction="#cancelButton_Init" onMouseEntered="#cancelButton_Entered" onMouseExited="#cancelButton_Exited" prefHeight="30.0" prefWidth="30.0" styleClass="cancel-button" />
+      <Button fx:id="prevButton" layoutX="524.0" layoutY="392.0" mnemonicParsing="false" onAction="#prevButton_Init" onMouseEntered="#prevButton_Entered" onMouseExited="#prevButton_Exited" prefHeight="30.0" prefWidth="30.0" rotate="180.0" styleClass="prev-button" />
+      <Button fx:id="okButton" layoutX="563.0" layoutY="393.0" mnemonicParsing="false" onAction="#okButton_Init" onMouseEntered="#okButton_Entered" onMouseExited="#okButton_Exited" prefHeight="30.0" prefWidth="30.0" styleClass="fin-button" />
+      <Separator layoutX="47.0" layoutY="57.0" orientation="VERTICAL" prefHeight="137.0" prefWidth="8.0" />
+      <Separator layoutX="54.0" layoutY="88.0" prefHeight="3.0" prefWidth="30.0" />
+      <Separator layoutX="54.0" layoutY="120.0" prefHeight="3.0" prefWidth="30.0" />
+      <Separator layoutX="54.0" layoutY="155.0" prefHeight="3.0" prefWidth="30.0" />
+      <Separator layoutX="54.0" layoutY="190.0" prefHeight="3.0" prefWidth="30.0" />
+      <Label fx:id="priotyCheck" layoutX="14.0" layoutY="58.0" opacity="0.0" text="pls select at least one of the boxes below " textFill="#f80606" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: whitesmoke;
+}
+
+.bar-anchorpane{
+    -fx-background-color:  #2b2e2e;
+}
+
+.cancel-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/cancel-blackwhite.png);
+}
+.text-Fields{
+    -fx-background-radius: 0;
+}
+
+.next-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/nxt.png);
+}
+
+
+
+.prev-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+
+    -fx-background-image: url(../images/nxt.png);
+}
+
+.fin-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+
+    -fx-background-image: url(../images/ok-fin.png);
+}

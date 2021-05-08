@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="715.0" styleClass="mainFxmlClass" stylesheets="@../css/newpatientscreen2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.NewPatientScreen2Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="74.0" prefHeight="58.0" prefWidth="91.0" text="Patient's ID  (NHIS/Voters)" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="320.0" layoutY="32.0" prefHeight="25.0" prefWidth="314.0" promptText="NHIS /  Voter's / Passport" styleClass="text-Fields" />
+      <TextField fx:id="confirmIdField" layoutX="320.0" layoutY="155.0" prefHeight="25.0" prefWidth="314.0" promptText="Confirm ID" styleClass="text-Fields" />
+      <Separator layoutX="172.0" layoutY="43.0" prefHeight="3.0" prefWidth="148.0" />
+      <Separator layoutX="173.0" layoutY="166.0" prefHeight="3.0" prefWidth="148.0" />
+      <Separator layoutX="90.0" layoutY="102.0" prefHeight="3.0" prefWidth="75.0" />
+      <Separator layoutX="169.0" layoutY="44.0" orientation="VERTICAL" prefHeight="122.0" prefWidth="2.0" />
+      <Label layoutX="228.0" layoutY="215.0" prefHeight="35.0" prefWidth="239.0" text="Emergency Contacts" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="9.0" layoutY="210.0" prefHeight="9.0" prefWidth="707.0" />
+      <Label layoutX="111.0" layoutY="320.0" prefHeight="27.0" prefWidth="54.0" text="Name" underline="true" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameEmergency1" layoutX="53.0" layoutY="352.0" prefHeight="25.0" prefWidth="216.0" styleClass="text-Fields" />
+      <TextField fx:id="phoneEmergency1" layoutX="311.0" layoutY="352.0" prefHeight="25.0" prefWidth="202.0" styleClass="text-Fields" />
+      <Label layoutX="369.0" layoutY="320.0" prefHeight="27.0" prefWidth="65.0" text="Phone" underline="true" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="320.0" prefHeight="27.0" prefWidth="102.0" text="Relationship" underline="true" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="relationshipEmergency1" layoutX="549.0" layoutY="352.0" prefHeight="25.0" prefWidth="148.0" styleClass="text-Fields" />
+      <TextField fx:id="nameEmergency2" layoutX="52.0" layoutY="415.0" prefHeight="25.0" prefWidth="216.0" promptText="Optional" />
+      <TextField fx:id="phoneEmergency2" layoutX="311.0" layoutY="415.0" prefHeight="25.0" prefWidth="202.0" promptText="Optional" styleClass="text-Fields" />
+      <TextField fx:id="relationshipEmergency2" layoutX="549.0" layoutY="412.0" prefHeight="25.0" prefWidth="148.0" promptText="Optional" styleClass="text-Fields" />
+      <TextField fx:id="relationshipEmergency3" layoutX="551.0" layoutY="470.0" prefHeight="25.0" prefWidth="148.0" promptText="Optional" styleClass="text-Fields" />
+      <TextField fx:id="phoneEmergency3" layoutX="311.0" layoutY="470.0" prefHeight="25.0" prefWidth="202.0" promptText="Optional" styleClass="text-Fields" />
+      <TextField fx:id="nameEmergency3" layoutX="53.0" layoutY="470.0" prefHeight="25.0" prefWidth="216.0" promptText="Optional" />
+      <Label layoutX="9.0" layoutY="351.0" text="1.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="416.0" text="2.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="479.0" text="3.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButtons" layoutX="671.0" layoutY="573.0" mnemonicParsing="false" onAction="#cancelButton_Init" prefHeight="30.0" prefWidth="30.0" styleClass="cancel-button" />
+      <Button fx:id="prevButton" layoutX="595.0" layoutY="573.0" mnemonicParsing="false" onAction="#prevButton_Init" prefHeight="30.0" prefWidth="30.0" rotate="180.0" styleClass="prev-button" />
+      <Button fx:id="finButtons" layoutX="634.0" layoutY="573.0" mnemonicParsing="false" onAction="#finButton_Init" prefHeight="30.0" prefWidth="30.0" styleClass="fin-button" />
+      <Label fx:id="idCheck" layoutX="643.0" layoutY="36.0" opacity="0.0" text="*" textFill="#ff0606">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="idCheck2" layoutX="320.0" layoutY="83.0" opacity="0.0" prefHeight="25.0" prefWidth="336.0" text="Either id fields are empty OR your inputs  dont match" textFill="#f20808">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emergencyCheck" layoutX="129.0" layoutY="258.0" opacity="0.0" prefHeight="26.0" prefWidth="502.0" text="*" textFill="#f20808">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="idCheck1" layoutX="643.0" layoutY="156.0" opacity="0.0" text="*" textFill="#ff0606">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

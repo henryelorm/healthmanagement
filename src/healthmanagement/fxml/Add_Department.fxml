@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="202.0" prefWidth="513.0" styleClass="mainFxmlClass" stylesheets="@../css/adddepartment.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.AddDepartmentController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="33.0" prefHeight="126.0" prefWidth="461.0" styleClass="primary-smallPane">
+         <children>
+            <TextField fx:id="newDepartField" layoutX="49.0" layoutY="43.0" onKeyPressed="#enterPressed" prefHeight="40.0" prefWidth="364.0" promptText="Enter The Name of Department" styleClass="textField">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="12.1" radius="2.525" width="0.0" />
+               </effect>
+            </TextField>
+            <Text fill="#ebe9e9" layoutX="49.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Department" textAlignment="CENTER" wrappingWidth="132.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Text fx:id="fillSpaceText" fill="#e5430e" layoutX="122.0" layoutY="104.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Fill Blank Space">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="16.56" offsetX="0.2" radius="15.5625" width="47.69" />
+         </effect>
+      </AnchorPane>
+      <Button fx:id="okButton" layoutX="437.0" layoutY="164.0" mnemonicParsing="false" onAction="#okButton_Init" onMouseEntered="#okButton_MouseEntered" onMouseExited="#okButton_MouseExited" opacity="0.7" prefHeight="33.0" prefWidth="40.0" styleClass="ok-button" />
+      <Button fx:id="cancelButton" layoutX="477.0" layoutY="167.0" mnemonicParsing="false" onAction="#cancelButton_Init" onMouseEntered="#cancelButton_MouseEntered" onMouseExited="#cancelButton_MouseExited" opacity="0.71" prefHeight="27.0" prefWidth="31.0" styleClass="cancel-button" />
+   </children>
+</AnchorPane>

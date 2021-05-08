@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="583.0" prefWidth="840.0" styleClass="mainFxmlClass" stylesheets="@../css/deparmentslist.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.DeparmentsListController">
+    <children>
+        <TableView fx:id="tableView" layoutX="122.0" layoutY="43.0" prefHeight="540.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+            <columns>
+            <TableColumn fx:id="number" maxWidth="100.0" minWidth="20.0" prefWidth="60.0" text="#" />
+                <TableColumn fx:id="Id" maxWidth="100.0" minWidth="62.0" prefWidth="91.0" sortable="false" text="ID" />
+                <TableColumn fx:id="firstName" maxWidth="200.0" minWidth="100.0" prefWidth="145.0" text="First Name" />
+            <TableColumn fx:id="lastName" maxWidth="200.0" minWidth="100.0" prefWidth="145.0" text="Last Name" />
+            <TableColumn fx:id="otherName" maxWidth="200.0" minWidth="100.0" prefWidth="145.0" text="Other Name" />
+                <TableColumn fx:id="phoneNo" maxWidth="250.0" minWidth="100.0" prefWidth="130.0" sortable="false" text="Phone No." />
+                <TableColumn fx:id="task" maxWidth="350.0" minWidth="100.0" prefWidth="130.0" sortable="false" text="Task" />
+            </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#viewProfileItem" text="View Profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#editItem_Init" text="Edit Profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteItem_Init" text="Delete Profile" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+        </TableView>
+      <Text fx:id="departmentText" fill="#f2f0f0" layoutX="282.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchField" layoutX="477.0" layoutY="8.0" onMouseEntered="#searchField_MouseEntered" onMouseExited="#searchField_MouseExited" opacity="0.67" prefHeight="25.0" prefWidth="181.0" promptText="Search By Id, Last / First Name" styleClass="search-field" AnchorPane.rightAnchor="8.0" />
+      <Button fx:id="addButton" layoutX="27.0" layoutY="8.0" mnemonicParsing="false" onAction="#addButton_Init" onMouseEntered="#addButton_MouseEntered" onMouseExited="#addButton_MouseExited" opacity="0.55" prefHeight="25.0" prefWidth="25.0" styleClass="add-button">
+         <tooltip>
+            <Tooltip text="Add New  Staff Member  (Nurse/others)" />
+         </tooltip>
+      </Button>
+      <Button fx:id="editButton" layoutX="86.0" layoutY="8.0" mnemonicParsing="false" onAction="#editButton_Init" onMouseEntered="#editButton_MouseEntered" onMouseExited="#editButton_MouseExited" opacity="0.55" prefHeight="25.0" prefWidth="25.0" styleClass="edit-button">
+         <tooltip>
+            <Tooltip text="Edit  Staff Member  (Nurse/others) Info." />
+         </tooltip>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="139.0" layoutY="8.0" mnemonicParsing="false" onAction="#deleteButton_Init" onMouseEntered="#deleteButton_MouseEntered" onMouseExited="#deleteButton_MouseExited" opacity="0.55" prefHeight="14.0" prefWidth="23.0" styleClass="delete-button">
+         <tooltip>
+            <Tooltip text="Delete Staff Member  (Nurse/ others)" />
+         </tooltip>
+      </Button>
+      <Button fx:id="printerButton" layoutX="196.0" layoutY="6.0" mnemonicParsing="false" onAction="#printerButton_Init" onMouseEntered="#printerButton_MouseEntered" onMouseExited="#printerButton_MouseExited" opacity="0.55" prefHeight="29.0" prefWidth="29.0" styleClass="printer-button-">
+         <tooltip>
+            <Tooltip text="Print Page" />
+         </tooltip>
+      </Button>
+    </children>
+</AnchorPane>

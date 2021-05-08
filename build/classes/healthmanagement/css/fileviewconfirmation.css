@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+ -fx-background-color: white;
+}
+
+.ok-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30;
+    -fx-background-image:url(../images/ok.png);
+}
+
+.cancel-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 25;
+    -fx-background-image:url(../images/cancel.png);
+}
+

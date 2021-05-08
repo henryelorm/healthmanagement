@@ -1,0 +1,65 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-border-color: #3d6577;
+}
+
+.text-Fields{
+    -fx-background-radius: 10.0;
+}
+.fields-borders{
+    -fx-border-color: #3d6577;
+}
+
+.button-as-Text{
+    -fx-background-color: whitesmoke;
+   
+}
+
+.anchopane{
+    -fx-background-color: whitesmoke;
+
+}
+
+.edit-button{
+    -fx-background-size: 25;
+    -fx-background-image:url(../images/edit-black.png);
+    -fx-background-color: white;
+}
+
+.edit-button2{
+    -fx-background-size: 25;
+    -fx-background-image:url(../images/edit-black.png);
+    -fx-background-color: whitesmoke;
+}
+
+.add-clinicalFind{
+
+    -fx-background-size: 35;
+    -fx-background-image: url(../images/addnew.png);
+      -fx-background-color: whitesmoke;
+}
+
+.document-send{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 50;
+    -fx-background-image:url(../images/SendXX.png);
+}
+.document-send2{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 35;
+    -fx-background-image:url(../images/SendXX.png);
+}
+.box-radius{
+    -fx-background-radius: 20;
+}
+.save-buttons{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30;
+    -fx-background-image:url(../images/save-blackwhite.png);
+}
+.text-color-view4{
+    -fx-text-fill:#3d6577;
+}

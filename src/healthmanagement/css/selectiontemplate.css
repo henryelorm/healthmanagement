@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.background{
+    -fx-background-color:  #3d6577;
+}
+
+
+.box-character{
+    -fx-background-radius:12;
+}
+
+.ok-button-character{
+    -fx-background-radius:7;
+}
+
+.close-button-character{
+    -fx-background-radius:7;
+}

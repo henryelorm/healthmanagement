@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TableView fx:id="fileTable" onMouseClicked="#fileDate_Time_Init" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.FileTableController">
+   <columns>
+      <TableColumn fx:id="timeColumn" maxWidth="88.0" minWidth="88.0" prefWidth="88.0" resizable="false" text="Time" />
+      <TableColumn fx:id="dateColumn" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" resizable="false" text="Date" />
+   </columns>
+   <contextMenu>
+      <ContextMenu>
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#fileDate_Time_MenuItem" text="Open File" />
+            <MenuItem mnemonicParsing="false" onAction="#Delete_fileDate_Time_MenuItem" text="Remove File" />
+        </items>
+      </ContextMenu>
+   </contextMenu>
+</TableView>

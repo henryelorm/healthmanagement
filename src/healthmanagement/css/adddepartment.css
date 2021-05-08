@@ -1,0 +1,38 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-fill: transparent;
+    -fx-background-color: #3d6577;
+}
+
+
+.primary-smallPane{
+
+    -fx-background-color:  linear-gradient(#3d6577, #3d6579);
+    -fx-border-color: black;
+    -fx-border-radius: 20;
+    -fx-padding: 10 10 10 10;
+    -fx-background-radius: 20;
+    -fx-background-color:transparent;
+
+}
+
+
+.ok-button{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 37;
+    -fx-background-image:url(../images/ok.png);
+}
+
+.cancel-button{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 30;
+    -fx-background-image:url(../images/cancel.png);
+}
+
+.textField{
+     -fx-background-radius: 15;
+   
+}

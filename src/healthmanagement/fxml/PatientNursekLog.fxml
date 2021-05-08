@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="650.0" styleClass="mainFxmlClass" stylesheets="@../css/PatientNursekLog.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.PatientNursekLogController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="284.0" fitWidth="281.0" layoutX="364.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="14.0" layoutY="57.0" text="Name:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Text fx:id="nameText" layoutX="73.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarshie Henry Elorm Kwame" wrappingWidth="306.3603515625">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="94.0" text="Gender:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Text fx:id="genderText" layoutX="85.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Male" wrappingWidth="126.3603515625">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="25.0" text="ID No:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Text fx:id="patientIdText" layoutX="75.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GHS433255536" wrappingWidth="246.3603515625">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="14.0" layoutY="155.0" prefHeight="0.0" prefWidth="317.0" />
+      <Label layoutX="11.0" layoutY="166.0" prefHeight="26.0" prefWidth="126.0" text="Clinical Findings" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="201.0" prefHeight="26.0" prefWidth="41.0" text="BP:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bpField" layoutX="74.0" layoutY="201.0" prefHeight="25.0" prefWidth="204.0" />
+      <TextField fx:id="tempField" layoutX="74.0" layoutY="238.0" prefHeight="25.0" prefWidth="204.0" />
+      <Label layoutX="7.0" layoutY="238.0" prefHeight="26.0" prefWidth="49.0" text="Temp:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="276.0" prefHeight="26.0" prefWidth="59.0" text="Weight:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weightField" layoutX="74.0" layoutY="277.0" prefHeight="25.0" prefWidth="204.0" />
+      <Label layoutX="7.0" layoutY="315.0" prefHeight="26.0" prefWidth="59.0" text="Height:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="heightField" layoutX="74.0" layoutY="315.0" prefHeight="25.0" prefWidth="204.0" />
+      <TextArea fx:id="noteArea" layoutX="75.0" layoutY="362.0" prefHeight="161.0" prefWidth="389.0" />
+      <Label layoutX="7.0" layoutY="362.0" prefHeight="26.0" prefWidth="59.0" text="Notes:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="finButton" layoutX="568.0" layoutY="501.0" mnemonicParsing="false" onAction="#finButton_Init" prefHeight="30.0" prefWidth="30.0" styleClass="fin-button" stylesheets="@../css/PatientNursekLog.css" />
+      <Button fx:id="cancelButton" layoutX="611.0" layoutY="501.0" mnemonicParsing="false" onAction="#cancelButton_Init" prefHeight="30.0" prefWidth="30.0" styleClass="cancel-button" />
+   </children>
+</AnchorPane>

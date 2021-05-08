@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TableView fx:id="tableView" prefHeight="181.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.DailyLoqQuickViewTableController">
+   <columns>
+      <TableColumn fx:id="number" maxWidth="100.0" prefWidth="56.0" text="#" />
+      <TableColumn fx:id="dateColumn" maxWidth="500.0" prefWidth="485.0" text="Nurse Daily Log (Time Distinction )" />
+   </columns>
+   <contextMenu>
+      <ContextMenu>
+         <items>
+            <MenuItem fx:id="nurseLogItem" mnemonicParsing="false" onAction="#nurseLogItem_Init" text="View File" />
+         </items>
+      </ContextMenu>
+   </contextMenu>
+</TableView>

@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.close-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/cancel-blackwhite.png);
+}

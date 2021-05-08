@@ -1,0 +1,27 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #2b2e2e;
+}
+
+.summary-pane-gri1{
+    -fx-background-color: whitesmoke; 
+
+}
+
+.files-tabpane{
+    -fx-background-color: whitesmoke; 
+}
+
+.edit-button{
+    -fx-background-size: 25;
+    -fx-background-image:url(../images/edit-black.png);
+    -fx-background-color: whitesmoke;
+}
+.createFile-button{
+    -fx-background-size: 30;
+    -fx-background-image:url(../images/add_file.png);
+    -fx-background-color: whitesmoke;
+}

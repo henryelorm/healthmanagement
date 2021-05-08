@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="406.0" styleClass="mainFxmlClass" stylesheets="@../css/dailyloglist.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.DailyLogListController">
+   <children>
+      <Button fx:id="addButton" layoutX="268.0" layoutY="27.0" mnemonicParsing="false" onAction="#addButton_Init" onMouseEntered="#addButton_MouseEntered" onMouseExited="#addButton_MouseExited" opacity="0.5" prefHeight="25.0" prefWidth="25.0" styleClass="addNew">
+         <tooltip>
+            <Tooltip text="Add File" />
+         </tooltip></Button>
+      <Button fx:id="editButton" layoutX="310.0" layoutY="27.0" mnemonicParsing="false" onAction="#editButton_Init" onMouseEntered="#editButton_MouseEntered" onMouseExited="#editButton_MouseExited" opacity="0.5" prefHeight="25.0" prefWidth="25.0" styleClass="edit">
+         <tooltip>
+            <Tooltip text="Edit File" />
+         </tooltip></Button>
+      <Button fx:id="deleteButton" layoutX="353.0" layoutY="27.0" mnemonicParsing="false" onAction="#deleteButton_Init" onMouseEntered="#deleteButton_MouseEntered" onMouseExited="#deleteButton_MouseExited" opacity="0.5" prefHeight="25.0" prefWidth="25.0" styleClass="delete">
+         <tooltip>
+            <Tooltip text="Delete File" />
+         </tooltip></Button>
+      <Text fill="WHITE" layoutX="5.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-name" text="Date And Time" wrappingWidth="111.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutY="63.0" prefHeight="294.0" prefWidth="406.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="number" prefWidth="52.0" text="#" />
+          <TableColumn fx:id="dateColumn" prefWidth="353.0" text="Date And Time" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#editButton_Init" text="Edit" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteButton_Init" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

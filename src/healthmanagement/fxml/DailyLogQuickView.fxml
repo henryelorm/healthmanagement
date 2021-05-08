@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="274.0" prefWidth="329.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="healthmanagement.controllers.DailyLogQuickViewController">
+    <stylesheets>
+        <URL value="@/healthmanagement/css/dailylogquickview.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" prefHeight="26.0" prefWidth="41.0" text="BP:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="bpText" layoutX="90.0" layoutY="14.0" prefHeight="26.0" prefWidth="230.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="56.0" prefHeight="26.0" prefWidth="61.0" text="Temp:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="96.0" prefHeight="26.0" prefWidth="67.0" text="Weight:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="136.0" prefHeight="26.0" prefWidth="67.0" text="Height:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="tempText" layoutX="86.0" layoutY="56.0" prefHeight="26.0" prefWidth="230.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="weightText" layoutX="90.0" layoutY="96.0" prefHeight="26.0" prefWidth="230.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="heightText" layoutX="93.0" layoutY="136.0" prefHeight="26.0" prefWidth="222.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="176.0" prefHeight="26.0" prefWidth="67.0" text="Notes:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="noteArea" editable="false" layoutX="83.0" layoutY="179.0" prefHeight="81.0" prefWidth="230.0" />
+   </children>
+</AnchorPane>

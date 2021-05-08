@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: whitesmoke;
+}
+
+.text-Fields{
+    -fx-background-radius: 12;
+}
+
+.edit-save-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+
+    -fx-background-image: url(../images/ok-fin.png);
+}
+.close-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/cancel-blackwhite.png); 
+}

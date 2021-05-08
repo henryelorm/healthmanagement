@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: whitesmoke;
+}
+.search-field{
+
+    -fx-background-radius: 20;
+}
+.addpatient-button{
+    -fx-background-size: 35;
+    -fx-background-image:url(../images/add_patient.png);
+    -fx-background-color: whitesmoke;
+}
+
+.editpatient-button{
+    -fx-background-size: 33;
+    -fx-background-image:url(../images/edit-patient.png);
+    -fx-background-color: whitesmoke;
+}
+
+.deletepatient-button{
+    -fx-background-size: 33;
+    -fx-background-image:url(../images/delete.png);
+    -fx-background-color: whitesmoke;
+}
+.printer-button{
+    -fx-background-size: 33;
+    -fx-background-image:url(../images/printer.png);
+    -fx-background-color: whitesmoke;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="561.0" styleClass="mainFxmlClass" stylesheets="@../css/editfiletemplate.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="healthmanagement.controllers.EditFileTemplateController">
+   <children>
+      <TextField fx:id="field1" layoutX="19.0" layoutY="42.0" prefHeight="52.0" prefWidth="523.0" styleClass="text-Fields" />
+      <Button fx:id="saveButton" layoutX="476.0" layoutY="172.0" mnemonicParsing="false" onAction="#saveButton_Init" onMouseEntered="#saveButton_MouseEnter" onMouseExited="#saveButton_MouseExit" prefHeight="30.0" prefWidth="30.0" styleClass="edit-save-button" />
+      <Button fx:id="cancelButton" layoutX="517.0" layoutY="172.0" mnemonicParsing="false" onAction="#closeButton_Init" onMouseEntered="#closeButton_MouseEnter" onMouseExited="#closeButton_MouseExit" prefHeight="30.0" prefWidth="30.0" styleClass="close-button" />
+   </children>
+</AnchorPane>

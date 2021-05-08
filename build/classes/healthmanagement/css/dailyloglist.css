@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #3d6577;
+}
+
+.innerpane{
+    -fx-background-color: whitesmoke;
+}
+
+.text-name{
+    -fx-background-color: #3d6577;
+}
+
+.addNew{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 25;
+    -fx-background-image: url(../images/add-xxl.png);
+}
+
+.edit{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 25;
+    -fx-background-image: url(../images/edit-512.png);
+}
+
+.delete{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 25;
+    -fx-background-image: url(../images/delete-2-xxl.png);
+}

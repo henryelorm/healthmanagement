@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane_tabs" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="590.0" prefWidth="819.0" styleClass="mainFxmlClass" stylesheets="@../css/searchpatient.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.SearchPatientController">
+    <children>
+        <TableView fx:id="tableView" layoutX="67.0" layoutY="42.0" onMouseClicked="#viewFolder_MouseClicked" prefHeight="539.0" prefWidth="669.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0">
+            <columns>
+                <TableColumn fx:id="number" maxWidth="100.0" minWidth="62.0" prefWidth="70.0" sortable="false" text="#" />
+                <TableColumn fx:id="Id" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" sortable="false" text="ID" />
+                <TableColumn fx:id="lastName" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" text="Last Name" />
+                <TableColumn fx:id="firstName" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" text="First Name" />
+                <TableColumn fx:id="otherName" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" text="Other Name" />
+            <TableColumn fx:id="phoneNo" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" text="Phone No." />
+            </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                  <MenuItem fx:id="viewFolderItem" mnemonicParsing="false" onAction="#viewFolder_Init" text="View Folder" />
+                <MenuItem fx:id="editInfoItem" mnemonicParsing="false" onAction="#editInfoItem_Init" text="Edit Info" />
+                  <MenuItem fx:id="nurseLogItem" mnemonicParsing="false" onAction="#nurseLog_Init" text="Nurse Log" />
+                  <MenuItem fx:id="sendFolderItem" mnemonicParsing="false" onAction="#sendItem_Init" text="Send Folder" />
+                  <MenuItem fx:id="deletePatientItem" mnemonicParsing="false" onAction="#deletePatientItem_Init" text="Delete Patient" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+        </TableView>
+      <TextField fx:id="searchField" layoutX="480.0" layoutY="8.0" onMouseEntered="#searchField_MouseEntered" onMouseExited="#searchField_MouseExited" prefHeight="25.0" prefWidth="192.0" promptText="Search By Id, Last / First Name" styleClass="search-field" stylesheets="@../css/searchpatient.css" AnchorPane.rightAnchor="9.0" />
+      <Button fx:id="addButton" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#addButton_Init" onMouseEntered="#addButton_MouseEntered" onMouseExited="#addButton_MouseExited" prefHeight="35.0" prefWidth="35.0" styleClass="addpatient-button">
+         <tooltip>
+            <Tooltip text="Add New Patient" />
+         </tooltip>
+      </Button>
+      <Button fx:id="editButton" layoutX="81.0" layoutY="4.0" mnemonicParsing="false" onAction="#editButton_Init" onMouseEntered="#editButton_MouseEntered" onMouseExited="#editButton_MouseExited" prefHeight="33.0" prefWidth="33.0" styleClass="editpatient-button">
+         <tooltip>
+            <Tooltip text="Edit Patient Details" />
+         </tooltip>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="141.0" layoutY="4.0" mnemonicParsing="false" onAction="#deleteButton_Init" onMouseEntered="#deleteButton_MouseEntered" onMouseExited="#deleteButton_MouseExited" prefHeight="33.0" prefWidth="35.0" styleClass="deletepatient-button">
+         <tooltip>
+            <Tooltip text="Delete Patient And Records" />
+         </tooltip>
+      </Button>
+      <Button fx:id="printerButton" layoutX="206.0" layoutY="4.0" mnemonicParsing="false" onAction="#printerButton_Init" onMouseEntered="#printerButton_MouseEntered" onMouseExited="#printerButton_MouseExited" prefHeight="33.0" prefWidth="33.0" styleClass="printer-button">
+         <tooltip>
+            <Tooltip text="Print Patients List" />
+         </tooltip>
+      </Button>
+      <Text fill="#3d6577" layoutX="352.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient List" wrappingWidth="128.0" AnchorPane.leftAnchor="352.0" AnchorPane.rightAnchor="339.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

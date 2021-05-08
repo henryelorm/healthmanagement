@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="623.0" prefWidth="764.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.FileViewController">
+    <stylesheets>
+        <URL value="@/healthmanagement/css/fileview.css" />
+    </stylesheets>
+   <children>
+      <TabPane layoutX="40.0" layoutY="35.0" prefHeight="623.0" prefWidth="764.0" style="-fx-background-color: #3d6577;" styleClass="mainFxmlClass" stylesheets="@../css/fileview.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab style="-fx-text-fill: red;" text="Medicals">
+               <content>
+                  <ScrollPane fx:id="scrollpane_medicals" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+          </Tab>
+          <Tab text="Lab Report">
+               <content>
+                  <ScrollPane fx:id="scrollpane_labReport" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+          </Tab>
+            <Tab text="More Personal Info">
+               <content>
+                  <ScrollPane fx:id="scrollpane_OtherInfo" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

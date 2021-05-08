@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:whitesmoke;
+}
+
+.doctor-parent{
+    -fx-background-color:#3d6577;
+    -fx-background-radius: 12;
+}
+
+.department-parent{
+    -fx-background-color:#3d6577;
+    -fx-background-radius: 12;
+}
+
+.patient-Box{
+    -fx-background-radius: 12;
+}
+
+
+.cancel-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/cancel-blackwhite.png);
+}
+.ok-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 30 ;
+    -fx-background-radius: 20;
+
+    -fx-background-image: url(../images/ok-fin.png);
+}

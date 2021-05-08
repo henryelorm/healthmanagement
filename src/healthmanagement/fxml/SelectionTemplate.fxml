@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="171.0" prefWidth="420.0" styleClass="background" stylesheets="@../css/selectiontemplate.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="healthmanagement.controllers.SelectionTemplateController">
+   <children>
+      <ComboBox fx:id="departmentBox" layoutX="14.0" layoutY="39.0" prefHeight="40.0" prefWidth="379.0" promptText="Department" styleClass="box-character" />
+      <Button fx:id="closeButton" layoutX="361.0" layoutY="132.0" mnemonicParsing="false" onAction="#closeButton_Init" styleClass="close-button-character" text="Close" />
+      <Button fx:id="sendButton" layoutX="306.0" layoutY="132.0" mnemonicParsing="false" onAction="#sendButton_Init" styleClass="ok-button-character" text="Send" />
+      <Label fx:id="checkLabel" layoutX="111.0" layoutY="86.0" opacity="0.0" text="Please Select A Department" textFill="#ffe5e5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="596.0" styleClass="mainFxmlClass" stylesheets="@../css/sendtemplate.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.SendTemplateController">
+   <children>
+      <Separator layoutX="477.0" layoutY="89.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="0.0" />
+      <Separator layoutX="154.0" layoutY="85.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="0.0" />
+      <Button fx:id="cancelButton" layoutX="552.0" layoutY="485.0" mnemonicParsing="false" onAction="#cancelButton_Init" onMouseEntered="#cancelButton_Entered" onMouseExited="#cancelButton_Exited" prefHeight="30.0" prefWidth="30.0" styleClass="cancel-button" stylesheets="@../css/sendtemplate.css" />
+      <Button fx:id="okButton" layoutX="509.0" layoutY="485.0" mnemonicParsing="false" onAction="#okButton_Init" onMouseEntered="#okButton_Entered" onMouseExited="#okButton_Exited" prefHeight="30.0" prefWidth="30.0" styleClass="ok-button" />
+      <ComboBox fx:id="nameBox" layoutX="144.0" layoutY="14.0" prefHeight="25.0" prefWidth="325.0" styleClass="patient-Box" />
+      <TabPane layoutX="14.0" layoutY="120.0" prefHeight="364.0" prefWidth="285.0" style="-fx-background-radius: 12;" styleClass="doctor-parent" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-radius: 12;" text="Doctors">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="285.0">
+                     <children>
+                        <TableView fx:id="tableView_Doctor" layoutY="27.0" prefHeight="303.0" prefWidth="285.0" style="-fx-background-radius: 12;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+                          <columns>
+                            <TableColumn fx:id="firstName_Doctor" prefWidth="97.0" text="Last Name" />
+                            <TableColumn fx:id="lastName_Doctor" prefWidth="83.0" text="First Name" />
+                              <TableColumn fx:id="otherName_Doctor" prefWidth="102.0" text="Other Name" />
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#unselectDoctor_Init" text="Unselect Doctor" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                        <TextField layoutX="99.0" layoutY="2.0" prefHeight="25.0" prefWidth="180.0" promptText="Search For Doctor" style="-fx-background-radius: 12;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TabPane layoutX="370.0" layoutY="120.0" prefHeight="345.0" prefWidth="219.0" style="-fx-background-radius: 12;" styleClass="department-parent" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab style="-fx-background-radius: 12;" text="Departments">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableView_Department" layoutX="10.0" layoutY="28.0" prefHeight="280.0" prefWidth="219.0" style="-fx-background-radius: 12;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+                          <columns>
+                            <TableColumn fx:id="name_department" prefWidth="217.0" text="Departments" />
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#unselectDepartment_Init" text="Unselect Department" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                        <TextField layoutX="39.0" layoutY="2.0" prefHeight="25.0" prefWidth="180.0" promptText="Search For Department" style="-fx-background-radius: 12;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Separator layoutX="158.0" layoutY="84.0" prefHeight="5.0" prefWidth="318.0" />
+      <Separator layoutX="300.0" layoutY="56.0" orientation="VERTICAL" prefHeight="31.0" prefWidth="6.0" />
+      <Label layoutX="270.0" layoutY="39.0" text="Send File To" />
+   </children>
+</AnchorPane>

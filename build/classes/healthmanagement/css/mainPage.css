@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Jul-2016, 11:36:53
+    Author     : Elorm
+*/
+
+
+.header-bar{
+
+}
+
+.menu-bar{
+
+}
+.page-field{
+
+    -fx-background-color: #3d6577;
+
+} 
+.side-menu{
+    -fx-background-radius: 10;
+    -fx-background-color: whitesmoke;
+}
+.side-menu-buttons{
+    -fx-background-radius: 10;
+    -fx-background-color: whitesmoke;
+
+}
+.department {
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 38;
+    -fx-background-image: url(../images/solutions-departments.png);
+}
+
+.department-addNew{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 35;
+    -fx-background-image: url(../images/addnew.png);
+}
+
+.main-pane{
+    -fx-background-radius: 10;
+    -fx-background-color: whitesmoke;
+}
+
+.hospital-tabpane{
+    -fx-background-radius: 50;
+    -fx-background-color: whitesmoke;
+}
+
+.records-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 33;
+    -fx-background-image: url(../images/records2.png);
+}
+
+.records-patients-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 36;
+    -fx-background-image: url(../images/patients.png);
+}
+
+
+.records-doctors-button{
+    -fx-background-color: whitesmoke;
+    -fx-background-size: 36;
+    -fx-background-image: url(../images/doctor.png);
+}
+
+.account-imageview{
+    -fx-background-radius: 17;
+    -fx-border-radius:  17;
+}
+

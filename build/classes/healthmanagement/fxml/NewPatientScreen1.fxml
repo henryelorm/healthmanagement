@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="715.0" styleClass="mainFxmlClass" stylesheets="@../css/newpatientscreen1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.NewPatientScreen1Controller">
+   <children>
+      <TextField fx:id="firstNameField" layoutX="98.0" layoutY="55.0" prefHeight="25.0" prefWidth="193.0" promptText="First Name" styleClass="text-Fields" />
+      <TextField fx:id="lastNameField" layoutX="98.0" layoutY="87.0" prefHeight="25.0" prefWidth="193.0" promptText="Last Name" styleClass="text-Fields" />
+      <TextField fx:id="otherNameField" layoutX="98.0" layoutY="117.0" prefHeight="25.0" prefWidth="193.0" promptText="Other Name" styleClass="text-Fields" />
+      <Label layoutX="9.0" layoutY="58.0" text="First Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="90.0" text="Last Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="120.0" text="Other Names:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="330.0" fitWidth="293.0" layoutX="408.0" layoutY="47.0" onMouseClicked="#imageClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/noImage2.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="dayOfBirthBox" layoutX="93.0" layoutY="160.0" onMouseClicked="#dayBoxClicked" opacity="0.6" prefHeight="25.0" prefWidth="72.0" promptText="Day" styleClass="text-Fields" />
+      <ComboBox fx:id="monthOfBirthBox" layoutX="173.0" layoutY="161.0" onMouseClicked="#monthBoxClicked" opacity="0.6" prefHeight="25.0" prefWidth="114.0" promptText="Month" styleClass="text-Fields" />
+      <ComboBox fx:id="yearOfBirthBox" editable="true" layoutX="296.0" layoutY="160.0" onMouseClicked="#yearBoxClicked" opacity="0.6" prefHeight="25.0" prefWidth="78.0" promptText="Year" styleClass="text-Fields" />
+      <Label layoutX="163.0" layoutY="156.0" text="/">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="156.0" text="/">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="genderBox" layoutX="97.0" layoutY="18.0" onMouseClicked="#genderBoxClicked" prefHeight="25.0" prefWidth="193.0" promptText="Gender / Sex" styleClass="comboBox" />
+      <Label layoutX="9.0" layoutY="18.0" text="Gender:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="395.0" layoutY="10.0" orientation="VERTICAL" prefHeight="366.0" prefWidth="0.0" />
+      <Label layoutX="9.0" layoutY="215.0" text="Nationality:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nationalityField" layoutX="98.0" layoutY="212.0" prefHeight="25.0" prefWidth="193.0" promptText="Nationality" styleClass="text-Fields" />
+      <TextField fx:id="locationField" layoutX="98.0" layoutY="245.0" prefHeight="25.0" prefWidth="193.0" promptText="Location" styleClass="text-Fields" />
+      <Label layoutX="9.0" layoutY="248.0" text="Location-City:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="280.0" text="House No:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="houseNoField" layoutX="98.0" layoutY="277.0" prefHeight="25.0" prefWidth="193.0" promptText="House Number" styleClass="text-Fields" />
+      <TextField fx:id="phoneNoField" layoutX="99.0" layoutY="314.0" prefHeight="25.0" prefWidth="193.0" promptText="Phone / Mobile Number" styleClass="text-Fields" />
+      <Label layoutX="9.0" layoutY="317.0" text="Phone No:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="163.0" text="Date of Birth:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="349.0" text="Email :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="99.0" layoutY="346.0" prefHeight="25.0" prefWidth="193.0" promptText="Email Address (Optional)" styleClass="text-Fields" />
+      <Separator layoutX="8.0" layoutY="390.0" prefHeight="0.0" prefWidth="698.0" />
+      <TextField fx:id="occupationField" layoutX="112.0" layoutY="409.0" prefHeight="25.0" prefWidth="207.0" promptText="Occupation (Optional)" styleClass="text-Fields" />
+      <Label layoutX="9.0" layoutY="411.0" text="Occupation:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="412.0" text="Marital Status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="maritalStatusBox" layoutX="476.0" layoutY="410.0" onMouseClicked="#maritalStatusBoxClicked" prefHeight="25.0" prefWidth="207.0" promptText="Marital Status" styleClass="comboBox" />
+      <TextField fx:id="spouseNameField" layoutX="475.0" layoutY="463.0" prefHeight="25.0" prefWidth="218.0" promptText="Name of Wife/Husband (optional)" styleClass="text-Fields" />
+      <TextField fx:id="spouseNoField" layoutX="475.0" layoutY="508.0" prefHeight="25.0" prefWidth="218.0" promptText="Wife/Husband 's Phone Number(optional)" styleClass="text-Fields" />
+      <TextField fx:id="fatherNameField" layoutX="112.0" layoutY="444.0" prefHeight="25.0" prefWidth="207.0" promptText="Father's Name (Optional)" styleClass="text-Fields" />
+      <Label layoutX="9.0" layoutY="446.0" text="Father's Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="478.0" text="Mother's Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="motherNameField" layoutX="111.0" layoutY="475.0" prefHeight="25.0" prefWidth="207.0" promptText="Mother's Name (Optional)" styleClass="text-Fields" />
+      <TextField fx:id="parentsNoField" layoutX="111.0" layoutY="510.0" prefHeight="25.0" prefWidth="207.0" promptText="Parent's Phone Number (Optional)" styleClass="text-Fields" />
+      <Label layoutX="9.0" layoutY="510.0" text="Parent's Phone:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButtons" layoutX="667.0" layoutY="572.0" mnemonicParsing="false" onAction="#cancelButton_Init" prefHeight="30.0" prefWidth="30.0" styleClass="cancel-button" />
+      <Button fx:id="nxtButton" layoutX="628.0" layoutY="572.0" mnemonicParsing="false" onAction="#nxtButton_Init" prefHeight="30.0" prefWidth="30.0" styleClass="next-button" />
+      <Text layoutX="437.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double  Click Image Below to Load New" wrappingWidth="235.0" />
+      <Label fx:id="genderCheck" layoutX="297.0" layoutY="18.0" opacity="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dobCheck" layoutX="379.0" layoutY="161.0" opacity="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="nationalityCheck" layoutX="293.0" layoutY="212.0" opacity="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationCheck" layoutX="293.0" layoutY="246.0" opacity="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="houseNoCheck" layoutX="293.0" layoutY="278.0" opacity="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNoCheck" layoutX="293.0" layoutY="315.0" opacity="0.0" prefHeight="25.0" prefWidth="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainCheck" layoutX="28.0" layoutY="562.0" opacity="0.0" text="Pls fill all unoptional spaces / Check your Inputs" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="spouseNameText" layoutX="374.0" layoutY="481.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="Spouse Name:" wrappingWidth="96.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="spouseNoText" layoutX="374.0" layoutY="525.0" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="Spouse Phone:" wrappingWidth="96.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="statusCheck" layoutX="690.0" layoutY="409.0" opacity="0.0" text="*" textFill="#ff0202">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:#3d6577;
+}
+.add-button{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 25 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/add-xxl.png);
+}
+
+.edit-button{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 25 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/edit-512.png);
+}
+
+.delete-button{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 23 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/delete-2-xxl.png);
+}
+
+.printer-button-{
+    -fx-background-color: #3d6577;
+    -fx-background-size: 28 ;
+    -fx-background-radius: 20;
+    -fx-background-image: url(../images/printer-xxl.png);
+}
+
+
+.search-field{
+    -fx-background-radius: 20;
+}

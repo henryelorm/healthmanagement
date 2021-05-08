@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="631.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.StaffViewInfoController">
+    <stylesheets>
+        <URL value="@/healthmanagement/css/staffviewinfo.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="staffImageView" fitHeight="234.0" fitWidth="250.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/noImage.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="24.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Id:" wrappingWidth="61.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="staffIdText" fill="#1c4e90" layoutX="105.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" wrappingWidth="61.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="titleText" fill="#1c4e90" layoutX="105.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="departmentText" fill="#1c4e90" layoutX="136.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department:" wrappingWidth="87.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialization:" wrappingWidth="105.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="specializationText" fill="#1c4e90" layoutX="136.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailText" fill="#1c4e90" layoutX="447.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="49.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:" wrappingWidth="93.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="dobText" fill="#1c4e90" layoutX="477.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="houseNoText" fill="#1c4e90" layoutX="477.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House No.:" wrappingWidth="87.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:" wrappingWidth="87.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="cityText" fill="#1c4e90" layoutX="447.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="closeButton" layoutX="587.0" layoutY="594.0" mnemonicParsing="false" onAction="#closeButton_Init" onMouseEntered="#closeButtonEntered" onMouseExited="#closeButtonExited" prefHeight="30.0" prefWidth="30.0" styleClass="close-button" stylesheets="@../css/staffviewinfo.css" />
+      <Text fx:id="nameText" fill="#1c4e90" layoutX="105.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="61.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No:" wrappingWidth="76.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="phoneText" fill="#1c4e90" layoutX="136.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name:" wrappingWidth="87.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="usernameText" fill="#1c4e90" layoutX="477.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="priorityText" fill="#1c4e90" layoutX="447.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority:" wrappingWidth="61.2587890625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

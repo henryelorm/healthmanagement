@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="650.0" styleClass="mainFxmlClass" stylesheets="@../css/newstaffview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.NewStaffScreen1Controller">
+   <children>
+      <TextField fx:id="firstNameField" layoutX="84.0" layoutY="31.0" onMouseEntered="#firstNameField_Entered" onMouseExited="#firstNameField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="First Name" styleClass="text-Fields" />
+      <ImageView fx:id="imageView" fitHeight="228.0" fitWidth="221.0" layoutX="404.0" layoutY="31.0" onMouseClicked="#imageClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/noImage.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="397.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double  Click Image Below to Load New" wrappingWidth="235.0" />
+      <TextField fx:id="lastNameField" layoutX="84.0" layoutY="65.0" onMouseEntered="#lastNameField_Entered" onMouseExited="#lastNameField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="Last Name" styleClass="text-Fields" />
+      <Separator layoutX="372.0" layoutY="9.0" orientation="VERTICAL" prefHeight="397.0" prefWidth="19.0" />
+      <TextField fx:id="otherNameField" layoutX="84.0" layoutY="99.0" onMouseEntered="#otherNameField_Entered" onMouseExited="#otherNameField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="Other Name" styleClass="text-Fields" />
+      <TextField fx:id="staffIdField" layoutX="85.0" layoutY="189.0" onMouseEntered="#staffIdField_Entered" onMouseExited="#staffIdField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="ID " styleClass="text-Fields" />
+      <Text layoutX="11.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" />
+      <Text layoutX="11.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" />
+      <Text layoutX="11.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other Name :" />
+      <Separator layoutX="15.0" layoutY="138.0" prefHeight="4.0" prefWidth="366.0" />
+      <Text layoutX="11.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff ID :" />
+      <TextField fx:id="phoneNoField" layoutX="89.0" layoutY="297.0" onMouseEntered="#phoneNoField_Entered" onMouseExited="#phoneNoField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="Phone / Mobile Number" styleClass="text-Fields" />
+      <Text layoutX="15.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No. :" />
+      <TextField fx:id="emailField" layoutX="88.0" layoutY="329.0" onMouseEntered="#emailField_Entered" onMouseExited="#emailField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="Email Address (Optional)" styleClass="text-Fields" />
+      <Text layoutX="15.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" />
+      <Label layoutX="283.0" layoutY="142.0" text="/">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="142.0" text="/">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="yearOfBirthBox" editable="true" layoutX="292.0" layoutY="146.0" onMouseClicked="#yearBoxClicked" onMouseEntered="#yearOfBirthBox_Entered" onMouseExited="#yearOfBirthBox_Exited" prefHeight="25.0" prefWidth="78.0" promptText="Year" styleClass="text-Fields" />
+      <ComboBox fx:id="monthOfBirthBox" layoutX="169.0" layoutY="146.0" onMouseClicked="#monthBoxClicked" onMouseEntered="#monthOfBirthBox_Entered" onMouseExited="#monthOfBirthBox_Exited" prefHeight="25.0" prefWidth="114.0" promptText="Month" styleClass="text-Fields" />
+      <ComboBox fx:id="dayOfBirthBox" layoutX="88.0" layoutY="146.0" onMouseClicked="#dayBoxClicked" onMouseEntered="#dayOfBirthBox_Entered" onMouseExited="#dayOfBirthBox_Exited" prefHeight="25.0" prefWidth="72.0" promptText="Day" styleClass="text-Fields" />
+      <TextField fx:id="houseNoField" layoutX="88.0" layoutY="365.0" onMouseEntered="#houseNoField_Entered" onMouseExited="#houseNoField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="House Number (Optional)" styleClass="text-Fields" />
+      <Text layoutX="15.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House No. :" />
+      <Text fx:id="titleText" layoutX="11.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Title :" />
+      <ComboBox fx:id="staffTitleBox" editable="true" layoutX="85.0" layoutY="224.0" onMouseClicked="#staffTitleBoxClicked" onMouseEntered="#staffTitleBox_Entered" onMouseExited="#staffTitleBox_Exited" prefHeight="25.0" prefWidth="235.0" promptText="Staff Title (eg. Nurse)" styleClass="text-Fields" />
+      <TextField fx:id="locationField" layoutX="89.0" layoutY="401.0" onMouseEntered="#locationField_Entered" onMouseExited="#locationField_Exited" prefHeight="25.0" prefWidth="235.0" promptText="City" styleClass="text-Fields" />
+      <Text layoutX="15.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location-City:" />
+      <Text layoutX="11.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth :" />
+      <PasswordField fx:id="passwordField" layoutX="501.0" layoutY="321.0" onMouseEntered="#passwordField_Entered" onMouseExited="#passwordField_Exited" prefHeight="25.0" prefWidth="131.0" promptText="Create Password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="501.0" layoutY="357.0" onMouseEntered="#confirmPasswordField_Entered" onMouseExited="#confirmPasswordField_Exited" prefHeight="25.0" prefWidth="131.0" promptText="Confirm Password" />
+      <Text layoutX="397.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Password:" />
+      <Text layoutX="397.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password:" />
+      <Button fx:id="nxtButton" layoutX="568.0" layoutY="396.0" mnemonicParsing="false" onAction="#nxtButton_Init" onMouseEntered="#nxtButton_Entered" onMouseExited="#nxtButton_Exited" prefHeight="30.0" prefWidth="30.0" styleClass="next-button" />
+      <Button fx:id="cancelButton" layoutX="608.0" layoutY="396.0" mnemonicParsing="false" onAction="#cancelButton_Init" onMouseEntered="#cancelButton_Entered" onMouseExited="#cancelButton_Exited" prefHeight="30.0" prefWidth="30.0" styleClass="cancel-button" />
+      <Label fx:id="dobCheck" layoutX="369.0" layoutY="147.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="staffIdCheck" layoutX="325.0" layoutY="195.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="staffTitleCheck" layoutX="325.0" layoutY="224.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNoCheck" layoutX="325.0" layoutY="266.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationCheck" layoutX="325.0" layoutY="361.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainCheck" layoutX="34.0" layoutY="6.0" opacity="0.0" text="Pls fill all unoptional spaces / Check your Inputs" textFill="RED" />
+      <Label fx:id="passCheck3" layoutX="391.0" layoutY="380.0" opacity="0.0" prefHeight="52.0" prefWidth="158.0" text="Either password fields are empty OR your passwords  dont match" textFill="RED" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="passCheck1" layoutX="635.0" layoutY="321.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="passCheck2" layoutX="633.0" layoutY="357.0" opacity="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="specializationBox" editable="true" layoutX="88.0" layoutY="263.0" onMouseClicked="#staffTitleBoxClicked" onMouseEntered="#staffTitleBox_Entered" onMouseExited="#staffTitleBox_Exited" prefHeight="25.0" prefWidth="235.0" promptText="Doctor's Specialization ()" styleClass="text-Fields" />
+      <Text fx:id="specializationText" layoutX="6.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialization:" />
+      <TextField fx:id="usernameField" layoutX="481.0" layoutY="281.0" prefHeight="25.0" prefWidth="131.0" promptText="Create account name" />
+      <Text layoutX="397.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+      <Label fx:id="usernameCheck" layoutX="622.0" layoutY="285.0" opacity="0.0" text="*" textFill="#f80303" />
+   </children>
+</AnchorPane>

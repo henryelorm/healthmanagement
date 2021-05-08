@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="1984.0" prefWidth="756.0" styleClass="anchopane" stylesheets="@../css/fileview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthmanagement.controllers.Fileview2Controller">
+   <children>
+      <Button layoutX="12.0" layoutY="320.0" mnemonicParsing="false" styleClass="button-as-Text" text="Condition (?)" textFill="#111111">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="18.0" layoutY="60.0" mnemonicParsing="false" styleClass="button-as-Text" text="Title (?)" textFill="#0a0a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="The title should be something meaningful to you, like &quot;First Consultation&quot;. If left emty it will autofill with the diagnosis or treatment values" wrapText="true" />
+         </tooltip>
+      </Button>
+      <TextField fx:id="titleField" layoutX="143.0" layoutY="60.0" prefHeight="25.0" prefWidth="592.0" styleClass="text-Fields" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="21.0" />
+      <TextArea fx:id="conditionsArea" editable="false" layoutX="125.0" layoutY="320.0" prefHeight="74.0" prefWidth="602.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="29.0" />
+      <Button fx:id="conditionsEditButton" layoutX="691.0" layoutY="357.0" mnemonicParsing="false" onAction="#conditionsEditButton_Init" onMouseEntered="#conditionsEditButton_MouseEnter" onMouseExited="#conditionsEditButton_MouseExit" prefHeight="25.0" prefWidth="25.0" styleClass="edit-button" AnchorPane.rightAnchor="40.0">
+         <tooltip>
+            <Tooltip text="Edit Field" />
+         </tooltip></Button>
+      <Button layoutX="8.0" layoutY="414.0" mnemonicParsing="false" styleClass="button-as-Text" text="Admission Date" textFill="#1e1e1e">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="The title should be something meaningful to you, like &quot;First Consultation&quot;. If left emty it will autofill with the diagnosis or treatment values" wrapText="true" />
+         </tooltip>
+      </Button>
+      <DatePicker fx:id="admissionDate" layoutX="151.0" layoutY="417.0" prefHeight="27.0" prefWidth="186.0" styleClass="fields-borders" />
+      <DatePicker fx:id="dischargeDate" layoutX="479.0" layoutY="419.0" prefHeight="27.0" prefWidth="186.0" styleClass="fields-borders" />
+      <Button layoutX="357.0" layoutY="415.0" mnemonicParsing="false" styleClass="button-as-Text" text="Discharge Date" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="The title should be something meaningful to you, like &quot;First Consultation&quot;. If left emty it will autofill with the diagnosis or treatment values" wrapText="true" />
+         </tooltip>
+      </Button>
+      <TextArea fx:id="complaintArea" editable="false" layoutX="110.0" layoutY="479.0" prefHeight="91.0" prefWidth="602.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="44.0" />
+      <Button layoutX="12.0" layoutY="473.0" mnemonicParsing="false" styleClass="button-as-Text" text="Complaint" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="complaintEditButton" layoutX="676.0" layoutY="525.0" mnemonicParsing="false" onAction="#complaintEditButton_Init" onMouseEntered="#complaintEditButton_MouseEnter" onMouseExited="#complaintEditButton_MouseExit" prefHeight="25.0" prefWidth="25.0" styleClass="edit-button" AnchorPane.rightAnchor="55.0" />
+      <Separator layoutX="3.0" layoutY="595.0" prefHeight="3.0" prefWidth="743.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="10.0" />
+      <Button layoutX="3.0" layoutY="629.0" mnemonicParsing="false" styleClass="button-as-Text" text="Clinical Findings" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="findingsAddButton" layoutX="684.0" layoutY="809.0" mnemonicParsing="false" onAction="#addClinicalFindings_Init" onMouseEntered="#findingsAddButton_MouseEnter" onMouseExited="#findingsAddButton_MouseExit" prefHeight="30.0" prefWidth="35.0" styleClass="add-clinicalFind" AnchorPane.rightAnchor="37.0" />
+      <TextField fx:id="findingsField" layoutX="124.0" layoutY="811.0" onKeyPressed="#addClinicalFindings_InitKey" prefHeight="25.0" prefWidth="557.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="75.0" />
+      <Button layoutX="17.0" layoutY="857.0" mnemonicParsing="false" styleClass="button-as-Text" text="Diagnosis" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="diagnosisArea" editable="false" layoutX="119.0" layoutY="863.0" prefHeight="129.0" prefWidth="602.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="35.0" />
+      <Button fx:id="diagnosisEditButton" layoutX="687.0" layoutY="949.0" mnemonicParsing="false" onAction="#diagnosisAreaEditButton_Init" onMouseEntered="#diagnosisEditButton_MouseEnter" onMouseExited="#diagnosisEditButton_MouseExit" prefHeight="25.0" prefWidth="25.0" styleClass="edit-button" AnchorPane.rightAnchor="44.0" />
+      <Separator layoutX="6.0" layoutY="1004.0" prefHeight="3.0" prefWidth="743.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="7.0" />
+      <TextField fx:id="treatmentField" layoutX="122.0" layoutY="1193.0" onKeyPressed="#treatments_InitKey" prefHeight="25.0" prefWidth="564.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="70.0" />
+      <Button fx:id="treatmentAddButton" layoutX="686.0" layoutY="1191.0" mnemonicParsing="false" onAction="#treatments_Init" onMouseEntered="#treatmentAddButton_MouseEnter" onMouseExited="#treatmentAddButton_MouseExit" prefHeight="30.0" prefWidth="35.0" styleClass="add-clinicalFind" AnchorPane.rightAnchor="35.0" />
+      <Button layoutX="18.0" layoutY="1031.0" mnemonicParsing="false" styleClass="button-as-Text" text="Treatments" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="3.0" layoutY="1238.0" prefHeight="3.0" prefWidth="743.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="medicationAddButton" layoutX="626.0" layoutY="1418.0" mnemonicParsing="false" onAction="#medication_Init" onMouseEntered="#medicationAddButton_MouseEnter" onMouseExited="#medicationAddButton_MouseExit" opacity="0.94" prefHeight="30.0" prefWidth="35.0" styleClass="add-clinicalFind" AnchorPane.rightAnchor="95.0" />
+      <TextField fx:id="medication_DrugNameField" layoutX="116.0" layoutY="1356.0" prefHeight="25.0" prefWidth="325.0" promptText="Drug Name" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="315.0" />
+      <TextField fx:id="medication_DrugQuantityField" layoutX="456.0" layoutY="1356.0" prefHeight="25.0" prefWidth="144.0" promptText="Drug Quantity" AnchorPane.rightAnchor="156.0" />
+      <TextField fx:id="medication_DosageField" layoutX="116.0" layoutY="1387.0" prefHeight="25.0" prefWidth="192.0" promptText="Dosage" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="448.0" />
+      <TextField fx:id="medication_ApplicationField" layoutX="314.0" layoutY="1387.0" prefHeight="25.0" prefWidth="144.0" promptText="Application" AnchorPane.rightAnchor="298.0" />
+      <TextField fx:id="medication_FreqField" layoutX="464.0" layoutY="1387.0" prefHeight="25.0" prefWidth="93.0" promptText="Frequency" AnchorPane.rightAnchor="199.0" />
+      <ComboBox fx:id="medication_DaysField" layoutX="568.0" layoutY="1387.0" prefWidth="150.0" promptText="Set Freq" AnchorPane.rightAnchor="38.0" />
+      <TextField fx:id="medication_NotesField" layoutX="116.0" layoutY="1419.0" prefHeight="25.0" prefWidth="509.0" promptText="Notes" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="131.0" />
+      <TextField fx:id="medication_FillField" layoutX="608.0" layoutY="1356.0" prefHeight="25.0" prefWidth="108.0" promptText="Refill" AnchorPane.rightAnchor="40.0" />
+      <Button layoutX="10.0" layoutY="1278.0" mnemonicParsing="false" styleClass="button-as-Text" text="Medication" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="recommendArea" editable="false" layoutX="121.0" layoutY="1494.0" prefHeight="129.0" prefWidth="602.0" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="33.0" />
+      <Button layoutX="2.0" layoutY="1457.0" mnemonicParsing="false" styleClass="button-as-Text" text="Recommendations" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="recommendEditButton" layoutX="681.0" layoutY="1576.0" mnemonicParsing="false" onAction="#recommendAreaEditButton_Init" onMouseEntered="#recommendEditButton_MouseEnter" onMouseExited="#recommendEditButton_MouseExit" prefHeight="25.0" prefWidth="25.0" styleClass="edit-button" AnchorPane.rightAnchor="50.0" />
+      <Separator layoutX="6.0" layoutY="1640.0" prefHeight="3.0" prefWidth="743.0" />
+      <HTMLEditor fx:id="detailsHTMLEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="3.0" layoutY="1687.0" prefHeight="297.0" prefWidth="749.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.0" />
+      <Button layoutX="8.0" layoutY="1651.0" mnemonicParsing="false" styleClass="button-as-Text" text="Details" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="medicBox" layoutX="143.0" layoutY="14.0" prefHeight="25.0" prefWidth="342.0" />
+      <Button layoutX="18.0" layoutY="12.0" mnemonicParsing="false" styleClass="button-as-Text" text="Medic" textFill="#0a0a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="medicationListView" editable="true" layoutX="116.0" layoutY="1254.0" prefHeight="91.0" prefWidth="602.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="38.0">
+         <tooltip>
+            <Tooltip text="Double Click to Edit" />
+         </tooltip>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#deleteMenuitemMedication_Init" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <Button fx:id="saveButton" disable="true" layoutX="713.0" layoutY="12.0" mnemonicParsing="false" onAction="#saveButton_Init" onMouseEntered="#saveButton_MouseEnter" onMouseExited="#saveButton_MouseExit" prefHeight="30.0" prefWidth="30.0" styleClass="save-buttons" AnchorPane.rightAnchor="13.0">
+         <tooltip>
+            <Tooltip text="Save " />
+         </tooltip></Button>
+      <Button layoutX="6.0" layoutY="125.0" mnemonicParsing="false" styleClass="button-as-Text" text="Nurse's Log" textFill="#0d0d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="8.0" layoutY="297.0" prefHeight="3.0" prefWidth="743.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="5.0" />
+      <ListView fx:id="findingsListViews" editable="true" layoutX="130.0" layoutY="616.0" prefHeight="172.0" prefWidth="592.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="34.0">
+         <tooltip>
+            <Tooltip text="Double Click to Edit " />
+         </tooltip>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                  <MenuItem fx:id="deleteItem_findings" mnemonicParsing="false" onAction="#deleteMenuitemFindings_Init" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <ListView fx:id="treatmentsListViews" editable="true" layoutX="120.0" layoutY="1027.0" prefHeight="152.0" prefWidth="602.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="34.0">
+         <tooltip>
+            <Tooltip text="Double Click To Edit" />
+         </tooltip>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#deleteMenuitemTreatments_Init" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu></ListView>
+      <Button fx:id="medicationSendButton" layoutX="676.0" layoutY="1415.0" mnemonicParsing="false" onAction="#medicationSendButton_Init" onMouseEntered="#medicationSendButton_MouseEnter" onMouseExited="#medicationSendButton_MouseExit" opacity="0.94" prefHeight="35.0" prefWidth="35.0" styleClass="document-send2" AnchorPane.rightAnchor="45.0">
+         <tooltip>
+            <Tooltip text="Send Medication to a Department" />
+         </tooltip>
+      </Button>
+      <Separator layoutX="662.0" layoutY="1415.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="3.0" AnchorPane.rightAnchor="91.0" />
+      <TabPane fx:id="nurseLogTabPane" layoutX="141.0" layoutY="98.0" prefHeight="185.0" prefWidth="592.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="nurseLogTab" text="Nurse Log" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
